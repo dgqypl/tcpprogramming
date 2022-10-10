@@ -1,0 +1,1 @@
+实现[文中](https://time.geekbang.org/column/article/481908)“Socket 中有足够数据”这一情况，循环调用 `c.Read()` 直到读取完全部数据

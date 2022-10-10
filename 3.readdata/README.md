@@ -1,0 +1,1 @@
+实现[文中](https://time.geekbang.org/column/article/481908)“Socket 中有部分数据”这一情况，`c.Read()` 正常读取数据到 buf 中然后代码继续往下执行，而不是等 buf 满了才往下执行
