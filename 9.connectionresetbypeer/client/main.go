@@ -18,7 +18,7 @@ func main() {
 	fmt.Println("dial ok")
 
 	var n int
-	if n, err = conn.Write([]byte("hello world! Gopher123")); err != nil { // 19 字节
+	if n, err = conn.Write([]byte("hello world! Gopher123")); err != nil { // 22 字节
 		fmt.Println(fmt.Sprintf("写入发生错误：%+v", err))
 		return
 	}
