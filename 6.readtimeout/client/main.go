@@ -18,7 +18,7 @@ func main() {
 	fmt.Println("dial ok")
 
 	for i := 0; i < 2; i++ {
-		time.Sleep(time.Duration(5) * time.Second)
+		time.Sleep(5 * time.Second)
 
 		var n int
 

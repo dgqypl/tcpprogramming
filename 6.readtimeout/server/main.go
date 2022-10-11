@@ -13,7 +13,7 @@ func handleConn(c net.Conn) {
 
 	for {
 		var buf = make([]byte, 10)
-		c.SetDeadline(time.Now().Add(time.Duration(3) * time.Second))
+		c.SetDeadline(time.Now().Add(3 * time.Second))
 		n, err := c.Read(buf)
 		if err != nil {
 			fmt.Println(fmt.Sprintf("读取发生错误：%+v", err))

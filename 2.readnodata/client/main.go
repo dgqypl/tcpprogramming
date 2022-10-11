@@ -17,5 +17,5 @@ func main() {
 	defer conn.Close()
 	fmt.Println("dial ok")
 
-	time.Sleep(time.Duration(100) * time.Second)
+	time.Sleep(100 * time.Second)
 }
