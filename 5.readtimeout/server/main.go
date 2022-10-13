@@ -9,7 +9,7 @@ import (
 func handleConn(c net.Conn) {
 	defer c.Close()
 
-	c.SetDeadline(time.Now().Add(time.Duration(3) * time.Second))
+	c.SetReadDeadline(time.Now().Add(time.Duration(3) * time.Second))
 	fmt.Println("准备读取...")
 
 	for {
